@@ -96,3 +96,33 @@ img {
   width: 100%;
   border: solid 1px white;
 }
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .difficultyInner {
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .difficultyImg {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.75em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+}
