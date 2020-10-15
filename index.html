@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Maze</title>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Maze Game</h1>
+      <h2>Choose your difficulty Level</h2>
+      <div class="difficultyInner">
+        <div class="difficultyImg" id="easy">
+          <img src="imgs/thumb_easy.JPG" alt="Start Game with Easy Mode">
+        </div>
+        <div class="difficultyImg" id="medium">
+          <img src="imgs/thumb_medium.JPG" alt="Start Game with Medium Mode">
+        </div>
+        <div class="difficultyImg" id="hard">
+          <img src="imgs/thumb_hard.JPG" alt="Start Game with Hard Mode">
+        </div>
+      </div>
+    </div>
+
+    <div class="instructions hidden">
+      <h1>Use 'W' 'A' 'S' and 'D' to move the Ball</h1>
+      <h2>Make it to the Goal as fast as possible</h2>
+    </div>
+    
+    <div id="timer" class="hidden">0</div>
+
+    <div class="winner hidden">
+      <h1 id="winTimeDisplay"></h1>
+      <h2>Highscore (in seconds)</h2>
+      <ol>
+        <li class="highscore"></li>
+        <li class="highscore"></li>
+        <li class="highscore"></li>
+        <li class="highscore"></li>
+        <li class="highscore"></li>
+      </ol>
+      <div id="winButtons">
+        <button id="playAgain">Play Again</button>
+        <button id="backHome">Change Difficulty</button>
+      </div>
+    </div>
+    <script src="difficulty.js"></script>
+    <script src="https://jeremyckahn.github.io/keydrown/dist/keydrown.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+

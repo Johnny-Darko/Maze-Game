@@ -1,0 +1,98 @@
+body {
+  background-color: #1b4332;
+  color: #b7e4c7;
+  font-family: 'Staatliches', cursive;
+}
+
+.hidden {
+  display: none !important;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
+#winTime {
+  color: #ee6c4d;
+}
+
+li {
+  font-size: 3em;
+}
+
+button {
+  margin: 0 10px;
+  font-size: 2em;
+  font-family: 'Staatliches', cursive;
+  color: #b7e4c7;
+  background-color: #161a1d;
+  border: solid 1px #b7e4c7;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ee6c4d;
+  transform: scale(1.05);
+}
+
+.winner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+#timer{
+  left: 92%;
+  font-size: 24px;
+  position: absolute;
+  z-index: 1;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.difficultyInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden; 
+  padding: 16px;
+}
+
+.difficultyImg {
+  transition: transform .5s ease;
+  
+}
+
+.difficultyImg:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  border: solid 1px white;
+}
